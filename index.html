@@ -1,59 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rusi Blog</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
 
-    <header>
-        <div class="container">
-            <h1>Cricketer</h1>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="buttons">
+      <button class="btn" onclick="appendValue('1')">1</button>
+      <button class="btn" onclick="appendValue('2')">2</button>
+      <button class="btn" onclick="appendValue('3')">3</button>
+      <button class="btn" onclick="appendValue('+')">+</button>
 
-    <main>
-        <div class="container">
-            <section class="blog-posts">
-                <article class="post">
-                    <h2>MS Dhoni</h2>
-                    <img src="msd.jpg" height="100" weight="90">
-                    <p class="date">February 20, 2025</p>
-                    <p>Mahendra Singh Dhoni is an Indian professional cricketer who plays as a right-handed batter and a wicket-keeper
-                    <a href="#">Read more</a>
-                </article>
+      <button class="btn" onclick="appendValue('4')">4</button>
+      <button class="btn" onclick="appendValue('5')">5</button>
+      <button class="btn" onclick="appendValue('6')">6</button>
+      <button class="btn" onclick="appendValue('-')">-</button>
 
-                <article class="post">
-                    <h2>Rohit Sharma</h2>
-                    <img src="rohit.webp" height="100" weight="90">
-                    <p class="date">February 18, 2025</p>
-                    <p>Rohit Sharma (born 30 April 1987) is an Indian cricketer and the captain of national cricket team in Test and ODI formats.
-                    <a href="#">Read more</a>
-                </article>
-            </section>
+      <button class="btn" onclick="appendValue('7')">7</button>
+      <button class="btn" onclick="appendValue('8')">8</button>
+      <button class="btn" onclick="appendValue('9')">9</button>
+      <button class="btn" onclick="appendValue('*')">*</button>
 
-            <aside class="sidebar">
-                <h3>About Me</h3>
-                <p>Hi, I'm a blogger sharing my thoughts and stories with the world. Stay tuned for new posts!</p>
-            </aside>
-        </div>
-    </main>
+      <button class="btn" onclick="appendValue('0')">0</button>
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="calculate()">=</button>
+      <button class="btn" onclick="appendValue('/')">/</button>
+    </div>
+  </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Rusi Blog. All Rights Reserved.</p>
-        </div>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
-   
